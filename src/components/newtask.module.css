@@ -1,0 +1,50 @@
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 3rem;
+
+    margin-top: calc(0px - 1.5rem);
+}
+
+.task input[type=text] {
+    flex: 1;
+    height: 100%;
+
+    background: var(--gray-500);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    padding: 0 1rem;
+    color: var(--gray-100).;
+}
+
+.task button {
+    padding: 0 1rem;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+        background: var(--blue-light);
+    }
+}
+
+.task button svg {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2px;
+    color: var(--gray-100);
+}
